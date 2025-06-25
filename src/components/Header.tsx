@@ -1,5 +1,7 @@
-import Link from "next/link";
+
 import Image from "next/image";
+import Link from "next/link";
+import { Menu } from "./Menu";
 
 interface Props { }
 
@@ -18,10 +20,7 @@ export function Header({ }: Props) {
             />
         </Link>
 
-        <nav className="flex gap-6 text-sm text-white/80">
-            <Link href={"/"}>Home</Link>
-            <Link href={"/"}>Explore</Link>
-            <Link href={"/"}>Profile</Link>
-        </nav>
+        <Menu />
+
     </header>
 }
