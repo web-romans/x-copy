@@ -7,15 +7,15 @@ export interface IMenuItem {
 
 export const MENU = [
     {
-        name: 'Home',
-        href: PAGES.HOME,
+        name: 'SSR',
+        href: PAGES.SSR,
     },
     {
-        name: 'Explore',
-        href: PAGES.EXPLORE,
+        name: 'SSG',
+        href: PAGES.SSG,
     },
     {
-        name: 'Profile',
-        href: PAGES.PROFILE_FAKE,
-    },
+        name: 'ISR',
+        href: PAGES.ISR,
+    }
 ]

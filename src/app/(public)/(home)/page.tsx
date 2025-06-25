@@ -2,6 +2,8 @@ import { TWETS } from "@/shared/data/tweets.data";
 import Tweet from "./Tweet";
 
 import type { Metadata } from "next";
+import { PageTitle } from "@/components/PageTitle";
+import TweetForm from "./TweetForm";
 
 
 export const metadata: Metadata = {
@@ -11,11 +13,11 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="w-full max-w-xl">
-      <h1 className="mb-5 text-white font-bold text-2xl">Home</h1>
+      <PageTitle title='Home' />
+      <TweetForm />
       {TWETS.map((tweet, i) => (
         <Tweet key={i} tweet={tweet} />
       ))}
     </div>
-
   );
 }

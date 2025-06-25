@@ -2,10 +2,10 @@
 
 import { usePathname } from "next/navigation";
 import { MenuItem } from "./MenuItem";
-import { MENU } from "../data/menu.data";
+import { MENU } from "../data/ShopMenu.data";
 import { match } from "path-to-regexp";
 
-export function Menu() {
+export function ShopMenu() {
     const pathname = usePathname();
 
     return (

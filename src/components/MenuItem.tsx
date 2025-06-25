@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { IMenuItem } from "./menu.data";
+import type { IMenuItem } from "../data/menu.data";
 
 interface Props {
     menuItem: IMenuItem
@@ -7,10 +7,12 @@ interface Props {
 }
 
 export function MenuItem({ menuItem, isActive }: Props) {
-    return <Link
-        href={menuItem.href}
-        className={isActive ? "text-white" : ""}
-    >
-        {menuItem.name}
-    </Link>
+    return (
+        <Link
+            href={menuItem.href}
+            className={isActive ? "text-white" : ""}
+        >
+            {menuItem.name}
+        </Link>
+    )
 }
