@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-
     <div className="w-full max-w-xl">
       <h1 className="mb-5 text-white font-bold text-2xl">Home</h1>
       {TWETS.map((tweet, i) => (
