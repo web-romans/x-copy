@@ -1,8 +1,8 @@
 'use client';
 
 import { usePathname } from "next/navigation";
-import { MenuItem } from "./MenuItem";
-import { MENU } from "../data/ShopMenu.data";
+import { MenuItem } from "../../../components/MenuItem";
+import { SHOP_MENU } from "../../../data/menu.data";
 import { match } from "path-to-regexp";
 
 export function ShopMenu() {
@@ -10,7 +10,7 @@ export function ShopMenu() {
 
     return (
         <nav className="flex gap-6 text-sm text-white/80">
-            {MENU.map((menuItem, i) => (
+            {SHOP_MENU.map((menuItem, i) => (
                 <MenuItem
                     key={i}
                     menuItem={menuItem}

@@ -1,7 +1,5 @@
 import type { PropsWithChildren } from "react";
-import { Header } from "@/components/Header";
-import { ShopMenu } from "@/components/ShopMenu";
-import { PageTitle } from "@/components/PageTitle";
+import { ShopMenu } from "@/app/(public)/shop/ShopMenu";
 
 export default function Layout({ children }: PropsWithChildren) {
   return (

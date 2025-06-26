@@ -23,3 +23,18 @@ export const MENU = [
         href: PAGES.SHOP,
     },
 ]
+
+export const SHOP_MENU = [
+    {
+        name: 'SSR',
+        href: PAGES.SSR,
+    },
+    {
+        name: 'SSG',
+        href: PAGES.SSG,
+    },
+    {
+        name: 'ISR',
+        href: PAGES.ISR,
+    }
+]
